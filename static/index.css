@@ -1,0 +1,99 @@
+body {
+  font-family: Myriad,Helvetica,Tahoma,Arial,clean,sans-serif;
+  background-color: white;
+  background-image: url("Images/bg1.png");
+}
+/*Styling the footer*/
+footer{
+  text-align: center;
+  font-size: 1.4em;
+  background-image: url("Images/images.png");
+  padding: 1%;
+  color: #2b396c;
+  font-weight: bold;
+  font-family: Ultra;
+}
+footer a { 
+color: purple;
+text-decoration: none;
+
+}
+footer a:hover {
+color: #9ee1fa; 
+text-decoration: underline; 
+}
+.header{
+  height: 122px;
+  width: 100%;
+  background-image: url("Images/images.png");
+  margin: 0;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1{
+	text-align: center;
+
+}
+#form{
+    display: inline-block;
+    padding: 10px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 20%;
+
+  }
+  /*Making the promotion text blink*/
+ .blinkme {
+    
+    text-align: right;
+    font-size: 10px;
+    color: purple;
+    font-weight: bold;
+
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+legend{
+	color:blue;
+}
+#outer{
+	text-align: center;
+}
+.inner{
+	text-align: left;
+}
+#page-wrap {
+     width: 800px;
+     margin: 0 auto;
+}

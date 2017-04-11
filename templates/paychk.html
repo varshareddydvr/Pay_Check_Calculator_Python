@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href= "{{ url_for('static',filename='style.css') }}" rel="stylesheet" type="text/css">
+   <link rel="icon" type="image/png" href="../static/Images/ico.png">
+   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ultra" />
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+
+  <meta charset="UTF-8">
+
+  <title> PayCheck</title>
+</head>
+<!-- for commenting -->
+<body>
+  <div class="page-wrap">
+    <div class="header">
+       <img src="../static/Images/lo.png" alt="HTML5 Icon" style="width:20%;height:100%;">
+    </div>
+    <form method="get" action="/">
+      <fieldset id="outer">
+        <fieldset class="inner">
+          <div class="heading">
+            <span class="dijitTitlePaneTextNode" style="-moz-user-select: none;">Your Paycheck Results</span>
+          </div>                  
+            <ul>  
+
+                  
+                <li>
+                <div>
+                  <span class="resultDef">State</span>                  <span class="resultData">{{state}}</span>
+                </div>
+                </li>
+                
+                <li>
+                <div>
+                  <span class="resultDef">Gross Pay</span>
+                  <span class="resultData">{{grosspay}}</span>
+                </div>
+                </li>
+                
+                <li>
+                <div>
+                  <span class="resultDef">Net Pay</span>
+                  <span class="resultData">{{netpay}}</span>
+                </div>
+                </li>
+
+                <li>
+                <div>
+                  <span class="resultDef">Pay Frequency</span>
+                  <span class="resultData">{{payfrequency}}</span>
+                </div>
+                </li>
+                
+                <li>
+                <div>
+                  <span class="resultDef">Federal Filing Status</span>
+                  <span class="resultData">{{filing_status}}</span>
+                </div>
+                </li>
+            </ul>  
+        </fieldset>
+        <fieldset class="inner">
+          <div class="heading">
+            <span class="dijitTitlePaneTextNode" style="-moz-user-select: none;">Your Deductions</span>
+          </div>          
+              <ul>  
+                <li>
+                 <div>
+                  <span class="resultDef">Federal Tax</span>
+                  <span class="resultData">{{federal_tax}}</span>
+                 </div>
+                 </li>             
+                                      
+                <li>
+                <div>
+                  <span class="resultDef">State Tax</span>
+                  <span class="resultData">{{state_tax}}</span>
+                </div>
+                </li>
+                
+                <li>
+                <div>
+                  <span class="resultDef">Social Security Tax</span>
+                  <span class="resultData">{{sstax}}</span>
+                </div>
+                </li>
+                
+                <li>
+                <div>
+                  <span class="resultDef">MediCare Tax</span>
+                  <span class="resultData">{{medicare_tax}}</span>
+                </div>
+                </li>
+
+                <li>
+                <div>
+                  <span class="resultDef">SDI/SUI Tax</span>
+                  <span class="resultData">{{sdi_sui}}</span>
+                </div>
+                </li>
+              </ul>  
+        </fieldset>
+          <br>
+            <input type="button" onclick="location.href='http://127.0.0.1:5000/ ';" value="New Calculation" />
+      </fiedset>
+    </form> 
+    
+  </div>
+  <div class="page-wrap">
+    <footer>
+        <p><small>&copy; Copyright by <a href="#">Pay Corp.</a> | Design by Avani & Varsha</a></small>
+            <div class="blinkme"><strong><span id="demo"></span></strong>  </div>
+            <script>
+               var d = new Date();
+               document.getElementById("demo").innerHTML = d.toString();
+            </script> 
+        </p>
+      </footer>
+  </div>
+</body>      
+</html>              
+                
+                
+                                      
+                
+              
